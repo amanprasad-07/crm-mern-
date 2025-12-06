@@ -42,13 +42,6 @@ export default function Login() {
           Login
         </h1>
 
-        {/* Display error message when authentication fails */}
-        {error && (
-          <p className="text-red-600 text-sm font-medium mb-4 text-center">
-            {error}
-          </p>
-        )}
-
         {/* Email input field */}
         <input
           value={email}

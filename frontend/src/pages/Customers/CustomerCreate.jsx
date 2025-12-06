@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import axiosInstance from "../../api/axiosInstance";
+import BackButton from "../../components/BackButton";
 
 export default function CustomerCreate() {
     const navigate = useNavigate();
@@ -46,8 +47,9 @@ export default function CustomerCreate() {
     return (
         // Page layout container with light background and padding.
         <div className="min-h-screen bg-gray-50 py-10 px-4">
+            <BackButton />
             <div className="max-w-xl mx-auto bg-white p-8 rounded-xl shadow-lg border border-gray-200">
-                
+
                 {/* Page header */}
                 <h1 className="text-2xl font-semibold mb-6 text-gray-800 text-center">
                     Add New Customer

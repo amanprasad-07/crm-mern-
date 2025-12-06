@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 import axiosInstance from "../../api/axiosInstance";
+import BackButton from "../../components/BackButton";
 
 export default function CustomerEdit() {
     const { id } = useParams();
@@ -37,6 +38,7 @@ export default function CustomerEdit() {
     return (
         // Main content wrapper with consistent styling across pages.
         <div className="min-h-screen bg-gray-50 py-10 px-4">
+            <BackButton/>
             <div className="max-w-xl mx-auto bg-white p-8 rounded-xl shadow-lg border border-gray-200">
 
                 {/* Page title */}

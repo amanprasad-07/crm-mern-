@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import axiosInstance from "../../api/axiosInstance";
+import BackButton from "../../components/BackButton";
 
 export default function CustomerDetails() {
     const navigate = useNavigate();
@@ -40,6 +41,7 @@ export default function CustomerDetails() {
     return (
         // Page wrapper with clean spacing and elevated card layout.
         <div className="min-h-screen bg-gray-50 py-10 px-4">
+            <BackButton/>
             <div className="max-w-2xl mx-auto bg-white p-8 rounded-xl shadow-lg border border-gray-200 space-y-6">
 
                 {/* Customer name as header */}
