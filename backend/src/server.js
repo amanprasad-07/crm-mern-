@@ -16,7 +16,7 @@ app.use(express.json());
 // Required for secure cookie-based JWT authentication.
 app.use(
   cors({
-    origin: "https://crm-mern-git-main-amanprasad-07s-projects.vercel.app",
+    origin: "https://crm-mern-alpha.vercel.app",
     credentials: true,
   })
 );
@@ -40,5 +40,5 @@ connectDb();
 
 // Start server on configured port.
 app.listen(process.env.PORT, () => {
-  console.log(`Server running on http://localhost:${process.env.PORT}`);
+  console.log(`Server running on port ${PORT}`);
 });
