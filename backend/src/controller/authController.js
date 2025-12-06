@@ -100,8 +100,8 @@ export const login = async (req, res, next) => {
     // Store token inside HttpOnly cookie for secure authentication
     res.cookie("token", token, {
       httpOnly: true,       // prevents client-side JavaScript from accessing the token
-      secure: false,        // set true in production with HTTPS
-      sameSite: "lax",      // protects against CSRF attacks
+      secure: true,        // set true in production with HTTPS
+      sameSite: "none",      // protects against CSRF attacks
       maxAge: 24 * 60 * 60 * 1000 // 1 day
     });
 
