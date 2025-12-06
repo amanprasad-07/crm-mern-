@@ -8,7 +8,5 @@ export const errorHandler = (err, req, res, next) => {
     success: false,
     message: err.message || "server error",
 
-    // Expose stack trace only in non-production environments for safer debugging.
-    stack: process.env.NODE_ENV === "production" ? null : err.stack
   });
 };
