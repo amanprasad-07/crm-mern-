@@ -16,7 +16,7 @@ app.use(express.json());
 // Required for secure cookie-based JWT authentication.
 app.use(
   cors({
-    origin: "crm-mern-kxzjd3i9k-amanprasad-07s-projects.vercel.app",
+    origin: "https://crm-mern-git-main-amanprasad-07s-projects.vercel.app",
     credentials: true,
   })
 );
