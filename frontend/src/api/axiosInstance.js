@@ -4,7 +4,7 @@ import axios from "axios";
 // Configures base API URL and ensures cookies (e.g., JWT tokens) are included
 // in all cross-origin requests when required for authenticated endpoints.
 const axiosInstance = axios.create({
-  baseURL: "http://localhost:5000/api",
+  baseURL: "https://crm-mern-3t3j.onrender.com/api",
   withCredentials: true // enables automatic cookie handling for authentication
 });
 
