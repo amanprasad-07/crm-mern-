@@ -1,6 +1,4 @@
-## ---
-
-**📚 CRM MERN Application Backend Documentation**
+## 📚 CRM MERN Application Backend Documentation
 
 This document provides detailed information on the architecture, setup, database design, API, logic, and testing approach for the backend component of the CRM application.
 
